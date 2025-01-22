@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="nav" class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand">
           <img
@@ -37,6 +37,14 @@
               >
             </li>
           </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Pretraga"
+              aria-label="Search"
+            />
+          </form>
         </div>
       </div>
     </nav>
@@ -53,15 +61,20 @@
   color: #2c3e50;
 }
 
+#nav {
+  background-color: #fcf9f5 !important;
+}
+
 nav {
   padding: 30px;
+  background-color: #dfc3a4 !important;
 
   a {
     font-weight: bold;
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #9e6f49;
     }
   }
 }

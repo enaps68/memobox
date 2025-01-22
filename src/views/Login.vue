@@ -27,7 +27,13 @@
               />
             </div>
             <br />
-            <button type="submit" class="btn btn-primary">Nastavi</button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="background-color: #9e6f49; border: none"
+            >
+              Nastavi
+            </button>
           </form>
         </div>
         <div class="col-sm"></div>
