@@ -2,7 +2,7 @@
   <div class="card">
     <div id="header" class="card-header">dd/mm/yyyy</div>
     <img
-      src="https://picsum.photos/600"
+      :src="info"
       class="card-img-top"
       alt="..."
       style="max-height: 500px; max-width: 500px; margin: auto"
@@ -19,6 +19,7 @@
 <script>
 export default {
   name: "Card",
+  props: ["info"],
 };
 </script>
 

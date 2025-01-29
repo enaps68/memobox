@@ -4,7 +4,7 @@
 
     <div class="col-7">
       <br />
-      <Card />
+      <Card v-for="card in cards" :info="card" />
     </div>
 
     <div class="col-3">... ovdje ide desni stupac!</div>
@@ -19,6 +19,15 @@ export default {
   name: "HomeView",
   components: {
     Card,
+  },
+  data: function () {
+    return {
+      cards: [
+        "https://picsum.photos/id/13/400/400",
+        "https://picsum.photos/id/65/400/400",
+        "https://picsum.photos/id/319/400/400",
+      ],
+    };
   },
 };
 </script>
